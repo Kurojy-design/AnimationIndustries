@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Presupuestos - Animation Industries</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="images/logo.png" alt="Logotipo de la Empresa" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">index</a></li>
+                        <li><a href="productos.html">Galería</a></li>
+                        <li><a href="presupuesto.html" class="active">Presupuestos</a></li>
+                        <li><a href="index.html"></a>contacto</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2> Solicite un Presupuesto</h2>
+                <form action="submit_presupuesto.php" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="informacion">Solicite más información</label>
+                    <textarea id="informacion" name="informacion" rows="4" required></textarea>
+
+                    <label for="acepto">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        Acepto la Política de privacidad
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="#"><img src="images/social1.png" alt="Red Social 1"></a>
+                <a href="#"><img src="images/social2.png" alt="Red Social 2"></a>
+                <a href="#"><img src="images/social3.png" alt="Red Social 3"></a>
+            </div>
+            <p>1-chōme-1-18 Toranomon, Minato City, Tokyo 105-0001, Japón</p>
+            <p><a href="#">Aviso Legal</a></p>
+        </footer>
+    </body>
+</html>
