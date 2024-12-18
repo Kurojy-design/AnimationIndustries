@@ -162,8 +162,11 @@ footer .social {
 }
 
 footer .social img {
+    width: auto;
     height: 30px;
+    object-fit: contain;
     transition: transform 0.3 ease, filter 0.3s ease;
+
 }
 
 footer .social img:hover{
