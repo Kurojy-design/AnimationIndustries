@@ -17,8 +17,9 @@ body, html {
 
 .page-container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    
 }
 /*Estilos del contenedor */
 .container {
@@ -162,7 +163,6 @@ footer .social {
 
 footer .social img {
     height: 30px;
-    margin: 0 5px;
     transition: transform 0.3 ease, filter 0.3s ease;
 }
 
