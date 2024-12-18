@@ -7,74 +7,76 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <header>
-            <div class="page-container">
-                <img src="../images/logo.png" alt="Logotipo de la Empresa" class="logo">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="Productos.html">Galería</a></li>
-                        <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section>
-                <h1>Animation Industries</h1>
-                <h2> Solicite un Presupuesto</h2>
-                <form action="submit_presupuesto.php" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input 
-                        type="text" 
-                        id="nombre" 
-                        name="nombre" 
-                        pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}"
-                        title="El nombre debe tener entre 2 y 50 caracteres y solo puede contener letras y espacios"
-                        required>
-
-                    <label for="email">Email</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        title="Introduzca una dirección de correo válida"
-                        required>
-
-                    <label for="telefono">Teléfono</label>
-                    <input 
-                        type="tel" 
-                        id="telefono" 
-                        name="telefono" 
-                        pattern="^\+?[0-9]{9,15}$"
-                        title="El telefono debe tener entre 9 y 15 dígitos y puede comenzar con el símbolo"
-                        required>
-
-                    <label for="informacion">Solicite más información</label>
-                    <textarea 
-                        id="informacion" 
-                        name="informacion" 
-                        rows="4" 
-                        pattern=".{10,500}"
-                        title="El mensaje debe tener entre 10 y 500 caracteres"
-                        required>
-                    </textarea>
-
-                    <label for="acepto">
+        <div class="page-container">
+            <header>
+                <div class="container">
+                    <img src="../images/logo.png" alt="Logotipo de la Empresa" class="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="Productos.html">Galería</a></li>
+                            <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <h1>Animation Industries</h1>
+                    <h2> Solicite un Presupuesto</h2>
+                    <form action="submit_presupuesto.php" method="post">
+                        <label for="nombre">Nombre</label>
                         <input 
-                            type="checkbox" 
-                            id="acepto" 
-                            name="acepto" 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,50}"
+                            title="El nombre debe tener entre 2 y 50 caracteres y solo puede contener letras y espacios"
                             required>
-                        Acepto la Política de privacidad
-                    </label>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Introduzca una dirección de correo válida"
+                            required>
+
+                        <label for="telefono">Teléfono</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            pattern="^\+?[0-9]{9,15}$"
+                            title="El telefono debe tener entre 9 y 15 dígitos y puede comenzar con el símbolo"
+                            required>
+
+                        <label for="informacion">Solicite más información</label>
+                        <textarea 
+                            id="informacion" 
+                            name="informacion" 
+                            rows="4" 
+                            pattern=".{10,500}"
+                            title="El mensaje debe tener entre 10 y 500 caracteres"
+                            required>
+                        </textarea>
+
+                        <label for="acepto">
+                            <input 
+                                type="checkbox" 
+                                id="acepto" 
+                                name="acepto" 
+                                required>
+                            Acepto la Política de privacidad
+                        </label>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+        </div>
         <footer>
             <div class="social">
                 <a href="https://es.linkedin.com/" target="_blank">
