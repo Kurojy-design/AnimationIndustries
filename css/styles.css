@@ -6,14 +6,13 @@
 }
 
 /* Estilos básicos*/
-body {
+body, html {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     height: 100%;
-    display: grid;
-    place-items: stretch;
+    
 }
 
 .page-container {
@@ -151,7 +150,16 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
+    font-size: 14px;
 }
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 footer .social img {
     height: 30px;
     margin: 0 5px;
